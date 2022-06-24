@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Band</title>
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/themify-icons/themify-icons.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Begin: Header -->
+    <header id="header">
+        <nav id="nav-wrapper">
+            <ul class="nav">
+                <li><a href="#">home</a></li>
+                <li><a href="#band">band</a></li>
+                <li><a href="#tour">tour</a></li>
+                <li><a href="#contact">contact</a></li>
+                <li><a href="#">more <i class="nav-arrow-down ti-angle-down"></i></a>
+                    <ul class="sub-nav">
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="#">Media</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <a href="#" class="btn-search"><i class="ti-search"></i></a>
+    </header>
+    <!-- End: Header -->
+
+    <!-- Begin: Silder -->
+    <section id="slider">
+        <section class="des-slider text-center">
+            <h2>Los Angeles</h2>
+            <p>We had the best time playing at Venice Beach!</p>
+        </section>
+    </section>
+    <!-- End: Slider -->
+
+    <!-- Begin: Content -->
+    <main id="main">
+        <section class="content">
+            <div id="band">
+                <div class="title-content text-center">
+                    <h1 class="heading">The band</h1>
+                    <p class="paragraph">We love music</p>
+                </div>
+                <p class="content-band text-justify">
+                    We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.
+                </p>
+                <div class="row">
+                    <div class="col-3 text-center">
+                        <p>Hao</p>
+                        <img src="assets/images/bandmember.jpg" alt="band-member">
+                    </div>
+                    <div class="col-3 text-center">
+                        <p>Quan</p>
+                        <img src="assets/images/bandmember.jpg" alt="band-member">
+                    </div>
+                    <div class="col-3 text-center">
+                        <p>Be Chau</p>
+                        <img src="assets/images/bandmember.jpg" alt="band-member">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content bg-black">
+            <div id="tour">
+                <div class="title-content text-center">
+                    <h1 class="heading">Tour dates</h1>
+                    <p class="paragraph">Remember to book your tickets!</p>
+                </div>
+                <ul class="tour-list bg-white">
+                    <li>Septemper <span class="sold-out">Sold out</span></li>
+                    <li>October <span class="sold-out">Sold out</span></li>
+                    <li>November <span class="badge">3</span></li>
+                </ul>
+                <div class="tour-detail row">
+                    <div class="col-3">
+                        <img src="assets/images/newyork.jpg" alt="New-york">
+                        <div class="buy-ticket">
+                            <p>New York</p>
+                            <p>Fri 27 Nov 2016</p>
+                            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button type="button" class="btn js-btn-ticket">Buy Tickets</button>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <img src="assets/images/paris.jpg" alt="Paris">
+                        <div class="buy-ticket">
+                            <p>New York</p>
+                            <p>Fri 27 Nov 2016</p>
+                            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button type="button" class="btn js-btn-ticket">Buy Tickets</button>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <img src="assets/images/sanfran.jpg" alt="Sanfran-cisco">
+                        <div class="buy-ticket">
+                            <p>New York</p>
+                            <p>Fri 27 Nov 2016</p>
+                            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button type="button" class="btn js-btn-ticket">Buy Tickets</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content">
+            <div class="title-content text-center">
+                <h1 class="heading">Contact</h1>
+                <p class="paragraph">Fan? Drop a note!</p>
+            </div>
+        </section>
+    </main>
+    <!-- End: Content -->
+
+    <!-- Begin: Footer -->
+    <footer id="footer"></footer>
+    <!-- End: Footer -->
+
+    <!--Begin:  Modal Buy Ticket -->
+    <div id="bg-modal-ticket" class="close">
+        <div class="modal-ticket js-modal-ticket">
+            <div class="head-modal">
+                <h2><i class="ti-bag"></i>Tickets</h2>
+                <span class="modal-close js-btn-close">x</span>
+            </div>
+            <div class="body-modal">
+                <p class="label-ticket"><i class="ti-shopping-cart"></i>Tickets, 15$ per person</p>
+                <input type="text" placeholder="How many?" class="input input-ticket">
+                <p class="label-ticket"><i class="ti-user"></i>Send To</p>
+                <input type="text" placeholder="How many?" class="input input-ticket">
+                <button type="button" class="btn btn-ticket">PAY <i class="ti-check"></i></button>
+                <p class="p-help">Need <a href="#">help?</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- End: Model Buy Ticket -->
+    <!-- Script Close Modal -->
+    <script>
+        const btns = document.querySelectorAll('.js-btn-ticket');
+        const btnClose = document.querySelector('.js-btn-close');
+        const modal = document.querySelector('#bg-modal-ticket');
+        const modalTicket = document.querySelector('.js-modal-ticket');
+        // Ham hien thi modal
+        const showBuyTicket = () => {
+            modal.classList.add('open');
+        }
+        // Ham an modal
+        const hideBuyTicket = () => {
+            modal.classList.remove('open');
+        }
+
+
+
+        for (btn of btns) {
+            btn.addEventListener('click', showBuyTicket)
+        };
+
+        btnClose.addEventListener('click', hideBuyTicket);
+        modal.addEventListener('click', hideBuyTicket);
+        modalTicket.addEventListener('click', (event) => event.stopPropagation())
+    </script>
+    <!-- End Script -->
+</body>
+
+</html>
