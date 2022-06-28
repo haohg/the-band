@@ -17,6 +17,11 @@ body {
 
 
 /* ####################  Common Style #################### */
+.clear {
+    clear: both;
+    display: block;
+}
+
 .row::after {
     content: "";
     display: block;
@@ -68,12 +73,21 @@ body {
     width: 60%;
 }
 
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
 .btn {
     border: none;
     background: #000;
     color: #fff;
     display: inline-block;
     cursor: pointer;
+    padding: 8px 16px;
 }
 
 .btn:hover {
@@ -81,9 +95,10 @@ body {
     color: #000;
 }
 
-.input{
+.input {
     display: inline-block;
     padding: 8px 16px;
+    width: 100%;
 }
 
 /* #################### Begin Style Header #################### */
@@ -335,45 +350,46 @@ body {
 
 /* #################### Start Modal Ticket Style #################### */
 #bg-modal-ticket {
-    background: rgba(0, 0, 0, 0.3);
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 100;
-    animation: modalFadeIn ease 0.4s;
+    z-index: 200;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #bg-modal-ticket .modal-ticket {
-    min-height: 300px;
-    width: 50%;
-    background: #fff;
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translatex(-50%);
+    max-width: calc(100% - 32px);
+    width: 800px;
+    position: relative;
+    animation: modalFadeIn ease 0.3s;
+    background-color: #fff;
 
 }
 
-@keyframes modalFadeIn{
-    from{
+@keyframes modalFadeIn {
+    from {
         opacity: 0;
         transform: translateY(-150px);
     }
-    to{
+
+    to {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
-.modal-ticket .head-modal{
+.modal-ticket .head-modal {
     background-color: #009688;
     color: #fff;
     padding: 32px 16px;
 }
 
-.modal-ticket .head-modal h2{
+.modal-ticket .head-modal h2 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 3rem;
     font-weight: 400;
@@ -382,25 +398,25 @@ body {
     margin: 10px 0;
 }
 
-.modal-ticket .head-modal i{
+.modal-ticket .head-modal i {
     margin-right: 10px;
 }
 
-.modal-ticket .body-modal{
+.modal-ticket .body-modal {
     font-size: 1.5rem;
     padding: 0 16px;
 }
 
-.modal-ticket .body-modal .input-ticket{
+.modal-ticket .body-modal .input-ticket {
     width: 100%;
 }
 
 
-.modal-ticket .body-modal .label-ticket{
+.modal-ticket .body-modal .label-ticket {
     margin: 15px 0;
 }
 
-.modal-ticket .body-modal .btn-ticket{
+.modal-ticket .body-modal .btn-ticket {
     width: 100%;
     background: #009688;
     padding: 16px;
@@ -408,39 +424,89 @@ body {
     font-weight: 600;
 }
 
-.modal-ticket .body-modal .p-help{
+.modal-ticket .body-modal .p-help {
     text-align: right;
     margin-bottom: 15px;
 }
 
-.body-modal .p-help a{
+.body-modal .p-help a {
     color: #2196F3;
 }
 
-.modal-ticket .modal-close{
+.modal-ticket .modal-close {
     position: absolute;
-    right:0;
-    top:0;
+    right: 0;
+    top: 0;
     padding: 8px 16px;
     font-size: 2rem;
 }
 
-.modal-ticket .modal-close:hover{
+.modal-ticket .modal-close:hover {
     background-color: #ccc;
     color: #000;
     cursor: pointer;
 }
 
-#bg-modal-ticket.close{
+#bg-modal-ticket.close {
     display: none;
 }
 
-#bg-modal-ticket.open{
-    display: block;
+#bg-modal-ticket.open {
+    display: flex;
 }
-
 
 
 /* #################### End Modal Ticket Style #################### */
 
 /* #################### End Style Tour Content #################### */
+
+/* #################### Start Style Contact #################### */
+#contact .body-contact {
+    padding: 32px 0;
+}
+
+#contact .left-contact i {
+    padding-right: 10px;
+}
+
+#contact .right-contact .btn-send {
+    margin: 10px 0;
+    float: right;
+}
+
+/* #################### End Style Contact #################### */
+
+
+
+
+/* #################### Start Style Map #################### */
+#map img{
+    width: 100%;
+
+}
+/* #################### End Style Map #################### */
+
+
+
+
+/* #################### Start Style Footer #################### */
+#footer{
+    padding: 64px 16px;
+}
+
+#footer .social-icon{
+    font-size: 2rem;
+}
+#footer .social-icon i:hover{
+    opacity: 0.6;
+}
+
+#footer p{
+    font-size: 1.6rem;
+    opacity: 0.6;
+}
+
+#footer p a{
+    color: #000;
+}
+/* #################### End Style Footer #################### */
