@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Band</title>
     <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/responsive.css">
     <link href="assets/themify-icons/themify-icons.css" rel="stylesheet">
 </head>
 
@@ -28,7 +29,13 @@
                 </li>
             </ul>
         </nav>
-        <a href="#" class="btn-search"><i class="ti-search"></i></a>
+        <div>
+            <a href="#" class="btn-search"><i class="ti-search"></i></a>
+        </div>
+        <div>
+            <i class="ti-menu btn-mobile-menu"></i>
+        </div>
+
     </header>
     <!-- End: Header -->
 
@@ -138,7 +145,7 @@
                                 <input type="email" placeholder="Email" required class="input">
                             </div>
                             <div class="col-1 mt-10">
-                                <input type="text" placeholder="Message" required    class="input">
+                                <input type="text" placeholder="Message" required class="input">
                             </div>
                             <div class="col-1">
                                 <button class="btn btn-send">SEND</button>
@@ -163,7 +170,7 @@
             <i class="ti-twitter"></i>
             <i class="ti-linkedin"></i>
         </div>
-        <p class="text-center">Powered by  <a href="#">w3.css</a></p>
+        <p class="text-center">Powered by <a href="#">w3.css</a></p>
     </footer>
     <!-- End: Footer -->
 
@@ -209,6 +216,23 @@
         btnClose.addEventListener('click', hideBuyTicket);
         modal.addEventListener('click', hideBuyTicket);
         modalTicket.addEventListener('click', (event) => event.stopPropagation())
+    </script>
+    <!-- End Script -->
+
+    <!-- Script Show/Hide Menu responsive -->
+    <script>
+        const headerElm = document.querySelector("#header");
+        var heightMenu = headerElm.clientHeight;
+        headerElm.onclick = () =>{
+            var isClose = headerElm.clientHeight === heightMenu;
+            if(isClose){
+                headerElm.style.height = 'auto'
+            }
+            else
+            {
+                headerElm.style.height = '47px';
+            }
+        }
     </script>
     <!-- End Script -->
 </body>

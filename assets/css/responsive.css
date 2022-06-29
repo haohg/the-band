@@ -1,0 +1,16 @@
+@media (max-width: 723px){
+
+    /* Nav style */
+    #nav-wrapper .nav>li{
+        float: none;
+    }
+
+    #header .btn-search{
+        display: none;
+    }
+
+    #header .btn-mobile-menu{
+        display: block;
+    }
+
+}

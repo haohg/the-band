@@ -111,6 +111,7 @@ body {
     height: 47px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
     z-index: 100;
+    overflow: hidden;
 }
 
 /* #################### Nav #################### */
@@ -172,7 +173,7 @@ body {
     padding: 8px 16px;
 }
 
-#header .btn-search {
+#header .btn-search, #header .btn-mobile-menu {
     display: block;
     float: right;
     color: #fff;
@@ -180,6 +181,13 @@ body {
     font-size: 1.5rem;
     font-weight: 700;
     padding: 15px 24px;
+}
+
+#header .btn-mobile-menu{
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
 }
 
 #header .btn-search:hover {
