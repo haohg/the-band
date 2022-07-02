@@ -29,20 +29,20 @@ body {
 }
 
 [class*="col"] {
-    float: left !important;
-    padding: 0 8px !important;
+    float: left;
+    padding: 0 8px;
 }
 
 .col-1 {
-    width: 100% !important;
+    width: 100%;
 }
 
 .col-2 {
-    width: 50% !important;
+    width: 50%;
 }
 
 .col-3 {
-    width: calc(100%/3) !important;
+    width: calc(100%/3);
 }
 
 .text-center {
@@ -81,6 +81,10 @@ body {
     margin-top: 10px;
 }
 
+.mt-16{
+    margin-top: 16px;
+}
+
 .btn {
     border: none;
     background: #000;
@@ -111,7 +115,6 @@ body {
     height: 47px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
     z-index: 100;
-    overflow: hidden;
 }
 
 /* #################### Nav #################### */
@@ -188,6 +191,7 @@ body {
     right: 0;
     top: 0;
     display: none;
+
 }
 
 #header .btn-search:hover {

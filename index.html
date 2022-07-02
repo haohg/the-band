@@ -67,15 +67,15 @@
                     consequat.
                 </p>
                 <div class="row">
-                    <div class="col-3 text-center">
+                    <div class="col-3 text-center s-col-full">
                         <p>Hao</p>
                         <img src="assets/images/bandmember.jpg" alt="band-member">
                     </div>
-                    <div class="col-3 text-center">
+                    <div class="col-3 text-center s-col-full">
                         <p>Quan</p>
                         <img src="assets/images/bandmember.jpg" alt="band-member">
                     </div>
-                    <div class="col-3 text-center">
+                    <div class="col-3 text-center s-col-full">
                         <p>Be Chau</p>
                         <img src="assets/images/bandmember.jpg" alt="band-member">
                     </div>
@@ -94,7 +94,7 @@
                     <li>November <span class="badge">3</span></li>
                 </ul>
                 <div class="tour-detail row">
-                    <div class="col-3">
+                    <div class="col-3 s-col-full mt-16">
                         <img src="assets/images/newyork.jpg" alt="New-york">
                         <div class="buy-ticket">
                             <p>New York</p>
@@ -103,7 +103,7 @@
                             <button type="button" class="btn js-btn-ticket">Buy Tickets</button>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-3 s-col-full mt-16">
                         <img src="assets/images/paris.jpg" alt="Paris">
                         <div class="buy-ticket">
                             <p>New York</p>
@@ -112,7 +112,7 @@
                             <button type="button" class="btn js-btn-ticket">Buy Tickets</button>
                         </div>
                     </div>
-                    <div class="col-3">
+                    <div class="col-3 s-col-full mt-16">
                         <img src="assets/images/sanfran.jpg" alt="Sanfran-cisco">
                         <div class="buy-ticket">
                             <p>New York</p>
@@ -131,20 +131,20 @@
                     <p class="paragraph">Fan? Drop a note!</p>
                 </div>
                 <div class="row body-contact">
-                    <div class="col-2 left-contact">
+                    <div class="col-2 s-col-full left-contact contact-mobile">
                         <p><i class="ti-location-arrow"></i> Chicago, US</p>
                         <p><i class="ti-mobile"></i> Phone: +00 151515</p>
                         <p><i class="ti-email"></i> Email: mail@mail.com</p>
                     </div>
-                    <div class="col-2 right-contact">
+                    <div class="col-2 s-col-full right-contact contact-mobile mt-16">
                         <form>
-                            <div class="col-2">
+                            <div class="col-2 s-col-full contact-mobile">
                                 <input type="text" placeholder="Name" required class="input">
                             </div>
-                            <div class="col-2">
+                            <div class="col-2 s-col-full contact-mobile">
                                 <input type="email" placeholder="Email" required class="input">
                             </div>
-                            <div class="col-1 mt-10">
+                            <div class="col-1 mt-10 contact-mobile">
                                 <input type="text" placeholder="Message" required class="input">
                             </div>
                             <div class="col-1">
@@ -216,25 +216,37 @@
         btnClose.addEventListener('click', hideBuyTicket);
         modal.addEventListener('click', hideBuyTicket);
         modalTicket.addEventListener('click', (event) => event.stopPropagation())
-    </script>
-    <!-- End Script -->
 
-    <!-- Script Show/Hide Menu responsive -->
-    <script>
+        // Show/Hide Menu responsive Mobile
         const headerElm = document.querySelector("#header");
+        const menuMobile = document.querySelector(".btn-mobile-menu")
         var heightMenu = headerElm.clientHeight;
-        headerElm.onclick = () =>{
+        menuMobile.onclick = () => {
             var isClose = headerElm.clientHeight === heightMenu;
-            if(isClose){
+            if (isClose) {
                 headerElm.style.height = 'auto'
             }
-            else
-            {
-                headerElm.style.height = '47px';
+            else {
+                headerElm.style.height = heightMenu;
             }
         }
+
+        // Script Hide Menu When it clicked
+
+        const menuItems = document.querySelectorAll(".nav li a[href*='#']")
+        for (menuItem of menuItems) {
+            menuItem.onclick = function (e) {
+                var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('sub-nav');
+                if (isParentMenu) {
+                    e.preventDefault();
+                }
+                else {
+                    headerElm.style.height = null;
+                }
+            }
+        }
+
     </script>
-    <!-- End Script -->
 </body>
 
 </html>
