@@ -81,11 +81,11 @@ body {
     margin-top: 10px;
 }
 
-.mt-8{
+.mt-8 {
     margin-top: 8px;
 }
 
-.mt-16{
+.mt-16 {
     margin-top: 16px;
 }
 
@@ -181,7 +181,8 @@ body {
     padding: 8px 16px;
 }
 
-#header .btn-search, #header .btn-mobile-menu {
+#header .btn-search,
+#header .btn-mobile-menu {
     display: block;
     float: right;
     color: #fff;
@@ -191,7 +192,7 @@ body {
     padding: 15px 24px;
 }
 
-#header .btn-mobile-menu{
+#header .btn-mobile-menu {
     position: absolute;
     right: 0;
     top: 0;
@@ -497,33 +498,37 @@ body {
 
 
 /* #################### Start Style Map #################### */
-#map img{
+#map img {
     width: 100%;
 
 }
+
 /* #################### End Style Map #################### */
 
 
 
 
 /* #################### Start Style Footer #################### */
-#footer{
+#footer {
     padding: 64px 16px;
 }
 
-#footer .social-icon{
+#footer .social-icon {
     font-size: 2rem;
-}
-#footer .social-icon i:hover{
-    opacity: 0.6;
+    color: rgb(146, 145, 145);
 }
 
-#footer p{
+#footer .social-icon i:hover {
+    color: #000;
+}
+
+#footer p {
     font-size: 1.6rem;
     opacity: 0.6;
 }
 
-#footer p a{
+#footer p a {
     color: #000;
 }
+
 /* #################### End Style Footer #################### */
