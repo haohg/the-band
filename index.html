@@ -67,15 +67,15 @@
                     consequat.
                 </p>
                 <div class="row">
-                    <div class="col-3 text-center s-col-full">
+                    <div class="col-3 text-center s-col-1 mt-16">
                         <p>Hao</p>
                         <img src="assets/images/bandmember.jpg" alt="band-member">
                     </div>
-                    <div class="col-3 text-center s-col-full">
+                    <div class="col-3 text-center s-col-1 mt-16">
                         <p>Quan</p>
                         <img src="assets/images/bandmember.jpg" alt="band-member">
                     </div>
-                    <div class="col-3 text-center s-col-full">
+                    <div class="col-3 text-center s-col-1 mt-16">
                         <p>Be Chau</p>
                         <img src="assets/images/bandmember.jpg" alt="band-member">
                     </div>
@@ -94,31 +94,31 @@
                     <li>November <span class="badge">3</span></li>
                 </ul>
                 <div class="tour-detail row">
-                    <div class="col-3 s-col-full mt-16">
+                    <div class="col-3 s-col-1 mt-16">
                         <img src="assets/images/newyork.jpg" alt="New-york">
                         <div class="buy-ticket">
                             <p>New York</p>
                             <p>Fri 27 Nov 2016</p>
                             <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <button type="button" class="btn js-btn-ticket">Buy Tickets</button>
+                            <button type="button" class="btn js-btn-ticket s-full-width">Buy Tickets</button>
                         </div>
                     </div>
-                    <div class="col-3 s-col-full mt-16">
+                    <div class="col-3 s-col-1 mt-16">
                         <img src="assets/images/paris.jpg" alt="Paris">
                         <div class="buy-ticket">
                             <p>New York</p>
                             <p>Fri 27 Nov 2016</p>
                             <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <button type="button" class="btn js-btn-ticket">Buy Tickets</button>
+                            <button type="button" class="btn js-btn-ticket s-full-width">Buy Tickets</button>
                         </div>
                     </div>
-                    <div class="col-3 s-col-full mt-16">
+                    <div class="col-3 s-col-1 mt-16">
                         <img src="assets/images/sanfran.jpg" alt="Sanfran-cisco">
                         <div class="buy-ticket">
                             <p>New York</p>
                             <p>Fri 27 Nov 2016</p>
                             <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <button type="button" class="btn js-btn-ticket">Buy Tickets</button>
+                            <button type="button" class="btn js-btn-ticket s-full-width">Buy Tickets</button>
                         </div>
                     </div>
                 </div>
@@ -131,24 +131,24 @@
                     <p class="paragraph">Fan? Drop a note!</p>
                 </div>
                 <div class="row body-contact">
-                    <div class="col-2 s-col-full left-contact contact-mobile">
+                    <div class="col-2 s-col-1 left-contact contact-mobile">
                         <p><i class="ti-location-arrow"></i> Chicago, US</p>
                         <p><i class="ti-mobile"></i> Phone: +00 151515</p>
                         <p><i class="ti-email"></i> Email: mail@mail.com</p>
                     </div>
-                    <div class="col-2 s-col-full right-contact contact-mobile mt-16">
+                    <div class="col-2 s-col-1 right-contact contact-mobile">
                         <form>
-                            <div class="col-2 s-col-full contact-mobile">
+                            <div class="col-2 s-col-1 s-p-0 s-mt-16">
                                 <input type="text" placeholder="Name" required class="input">
                             </div>
-                            <div class="col-2 s-col-full contact-mobile">
+                            <div class="col-2 s-col-1 s-p-0 s-mt-8">
                                 <input type="email" placeholder="Email" required class="input">
                             </div>
-                            <div class="col-1 mt-10 contact-mobile">
+                            <div class="col-1 mt-8 s-p-0">
                                 <input type="text" placeholder="Message" required class="input">
                             </div>
-                            <div class="col-1">
-                                <button class="btn btn-send">SEND</button>
+                            <div class="col-1 s-p-0">
+                                <button class="btn btn-send s-full-width">SEND</button>
                             </div>
                         </form>
                     </div>
@@ -227,7 +227,8 @@
                 headerElm.style.height = 'auto'
             }
             else {
-                headerElm.style.height = heightMenu;
+                console.log(heightMenu);
+                headerElm.removeAttribute('style')
             }
         }
 
