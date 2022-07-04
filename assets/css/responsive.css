@@ -1,10 +1,12 @@
-@media (max-width:1023px) {
+/* For mobile and tablet */
+@media (max-width:63.9375em) {
     .btn{
         padding: 16px 32px !important;
     }
 
     .input{
         padding: 16px;
+        font-size: 1.6rem;
     }
 
     #footer .social-icon{
@@ -25,8 +27,8 @@
         padding: 20px 0;
     }
 }
-
-@media (max-width: 723px) {
+/* For mobile */
+@media (max-width: 46.1875em) {
 
     /* Common */
     .s-mt-16{
@@ -78,17 +80,9 @@
         color: #fff;
     }
 
-    /* Band */
-
     /* Tour */
     #tour .tour-item {
         width: 100%;
         margin-top: 16px;
     }
-
-    /* Contact */
-    /* #contact .contact-mobile{
-        padding: 0;
-        font-size: 1.8rem;
-    } */
 }

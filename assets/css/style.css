@@ -225,6 +225,9 @@ body {
     left: 0;
     right: 0;
 }
+#slider .des-slider h2,#slider .des-slider p{
+    text-shadow: 0 0 1px #000;
+}
 
 #slider .des-slider h2 {
     font-size: 2.4rem;
@@ -530,5 +533,7 @@ body {
 #footer p a {
     color: #000;
 }
+
+
 
 /* #################### End Style Footer #################### */
